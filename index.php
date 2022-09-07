@@ -15,7 +15,7 @@
 	$designation1 = 'CIT Student';
 	?>
 	<div class="container text-center">
-		<?= "<h1>This is ASE 230 - class of Fall 2022</h1>"?>
+		<h1><?= "This is ASE 230 - class of Fall 2022"?></h1>
 	</div>
 	<div class="container">
 		<div class="row justify-content-center">
