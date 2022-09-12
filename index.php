@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
+	<?php
+	$students =[ ['name'=>'Andrew Keller','designation'=>'CIT Student','quote'=>'"Whether you believe you can or can\'t, you\'re right."','profession'=>'Remote Developer','company'=>'Intel','intro'=>'"I am a CIT student with a focus on programming and data analytics. My working career has lead me to a wide variety of experiences. Problem solving is at the root of what I do and I am not afraid to ask questions or say I don\'t know."','email'=>'"kellera11@mymail.nku.edu"','skills'=>['Python','Java','Tableau'],'funfact'=>'"Secretariat was a champion thouroughbred most know for winning the Triple Crown in 1973. He set and still holds the record at all three Triple Crown races: The Kentucky Derby, The Preakness Stakes and The Belmont Stakes. Considered by most to be the greatest racehorses of all time, he is considered by some as one of the greatest athletes of all time. He became the 9th Triple Crown winner when he won the Belmont Stakes by 31 lengths, approximately 248 feet. There are 13 total Triple Crown winners: Sir Barton (1919), Gallant Fox (1930), Omaha (1935), War Admiral (1937), Whrilaway (1941), Count Fleet (1943), Assault (1946), Citation (1948), Secretariat (1973), Seattle Slew (1977), Affirmed (1978), American Pharoah (2015), Justify (2018)."']];
+	
+	?>
 	<!-- https://www.bootdey.com/snippets/view/single-advisor-profile#html -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,10 +14,7 @@
 	<title>ASE 230 - Class of Fall 2022</title>
 </head>
 <body>
-	<?php
-	$name1 = 'Andrew Keller';
-	$designation1 = 'CIT Student';
-	?>
+
 	<div class="container text-center">
 		<h1><?= "This is ASE 230 - class of Fall 2022"?></h1>
 	</div>
@@ -35,13 +36,13 @@
 			<!-- Team Thumb-->
 			<div class="advisor_thumb"><a href="ANDREW_KELLER.php"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt=""></a>
 				<!-- Social Info-->
-				<div class="social-info"><a href="ANDREW_KELLER.php"><i class="fa fa-facebook"></i></a><a href="ANDREW_KELLER.php"><i class="fa fa-twitter"></i></a><a href="ANDREW_Keller.php"><i class="fa fa-linkedin"></i></a>
+				<div class="social-info"><a href="ANDREW_KELLER.php"><i class="fa fa-facebook"></i></a><a href="detail.php?index=1"><i class="fa fa-twitter"></i></a><a href="detail.php?"><i class="fa fa-linkedin"></i></a>
 				</div>
 			</div>
 			<!-- Team Details-->
 			<div class="single_advisor_details_info">
-				<?= "<h6>$name1</h6>" ?>
-				<?= "<p class='designation'>$designation1</p>" ?>
+				<h6><?=$students[1]['name']?></h6> 
+				 <p class="designation"><?=$students[1]['designation']?></p>
 			</div>
 		</div>
 	</div>
