@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-
 	<!-- https://www.bootdey.com/snippets/view/single-advisor-profile#html -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -29,7 +28,7 @@
 				'intro'=>'I am a senior at Northern Kentucky University in my final semester. I am ready to finish off my college career with some Server-Side Programming!',
 				'email'=>'deesn1@mymail.nku.edu',
 				'skills'=>['Finance','Information Technologies','Education'],
-				'fun fact'=>'I graduated as the Salutatorian of my high school class and I love to fish.']];
+				'fun fact'=>'I graduated as the Salutatorian of my high school class and I love to fish.'],['name'=>'Tony Stark','designation'=>'Iron Man','quote'=>'I am Iron Man','dream profession'=>'Avenger','company'=>'Stark Industries','intro'=>'I am Iron Man, and the leading (and strongest) Avenger','email'=>'tstark@Stark.com','skills'=>['World Saving','Engineering','Math'],'fun fact'=>'The Avengers are a group of superheroes.']];
 	
 	?>
 	<div class="container text-center">
@@ -41,14 +40,13 @@
 				<!-- Section Heading-->
 					<div class="section_heading text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
 						<h3>Our Creative <span> Team</span></h3>
-					
 						<div class="line"></div>
 					</div>
 			</div>
 		</div>
 <div class="row">
 <?php	
-	for($i=0;$i,count($students);$i++){
+	for($i=0;$i,$i<count($students);$i++){
 		?>
 	<div class="col-12 col-sm-6 col-lg-3">
 		<div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
@@ -68,10 +66,6 @@
 	<?php
 	}
 	?>
-	<!-- Single Advisor-->	
-	<!-- Single Advisor-->
-	<!-- Single Advisor-->	
-	<!-- Single Advisor-->
 </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
