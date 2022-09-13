@@ -1,7 +1,7 @@
 <html lang="en">
 <?php
   $number = $_GET['index'];
-  $students =[['photo'=>'/assets/AndrewKellerPhoto.jpg','name'=>'Andrew Keller',
+  $students =[['photo'=>'assets/Andrew Keller.jpg','name'=>'Andrew Keller',
         'designation'=>'CIT Student',
         'quote'=>'"Whether you believe you can or can\'t, you\'re right."',
         'dream profession'=>'Remote Developer',
@@ -42,7 +42,7 @@
     <div class="row">
       <div class="col-lg-5 col-md-6">
         <div class="mb-2">
-          <img class="w-100" src=<?php $students[$number]['photo']?> alt= <?= $students[$number]['name']?>>
+          <img class="w-100" src='<?= $students[$number]['photo'] ?>' alt="">
         </div>
         <div class="mb-2 d-flex">
           <h4 class='font-weight-normal'><?=$students[$number]['name']?></h4>
