@@ -1,3 +1,4 @@
+<<?php require_once('data.php') ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,7 +11,6 @@
 	<title>ASE 230 - Class of Fall 2022</title>
 </head>
 <body>
-
 	<div class="container text-center">
 		<h1>This is ASE 230 - class of Fall 2022</h1>
 	</div>
