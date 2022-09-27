@@ -1,53 +1,11 @@
-<html lang="en">
+
 <?php
+ include_once('functions.php');
+  include_once('data.php');
+ 
   $number = $_GET['index'];
-  $students =[['year'=>'****','photo'=>'assets/Andrew Keller.jpg',
-        'name'=>'Andrew Keller',
-        'designation'=>'CIT Student',
-        'quote'=>'"Whether you believe you can or can\'t, you\'re right."',
-        'dream profession'=>'Remote Developer',
-        'company'=>'Intel',
-        'intro'=>'"I am a CIT student with a focus on programming and data analytics. My working career has lead me to a wide variety of experiences. Problem solving is at the root of what I do and I am not afraid to ask questions or say I don\'t know."',
-        'email'=>'"kellera11@mymail.nku.edu"',
-        'skills'=>['Python','Java','Tableau'],
-        'fun fact'=>'"Secretariat was a champion thouroughbred most know for winning the Triple Crown in 1973. He set and still holds the record at all three Triple Crown races: The Kentucky Derby, The Preakness Stakes and The Belmont Stakes. Considered by most to be the greatest racehorses of all time, he is considered by some as one of the greatest athletes of all time. He became the 9th Triple Crown winner when he won the Belmont Stakes by 31 lengths, approximately 248 feet. There are 13 total Triple Crown winners: Sir Barton (1919), Gallant Fox (1930), Omaha (1935), War Admiral (1937), Whrilaway (1941), Count Fleet (1943), Assault (1946), Citation (1948), Secretariat (1973), Seattle Slew (1977), Affirmed (1978), American Pharoah (2015), Justify (2018)."'],
-        ['year'=>'****',
-        'photo'=>'assets/Noah Dees.jpg',
-        'name'=>'Noah Dees',
-        'designation'=>'PHP Designer',
-        'quote'=>'I may not always have good habits in terms of spending my time or money (which I am working on), but I do have the knowledge to get me out of trouble most of the time!',
-        'dream profession'=>'Python Coder',
-        'company'=>'IBM',
-        'intro'=>'I am a senior at Northern Kentucky University in my final semester. I am ready to finish off my college career with some Server-Side Programming!',
-        'email'=>'deesn1@mymail.nku.edu',
-        'skills'=>['Finance','Information Technologies','Education'],
-        'fun fact'=>'I graduated as the Salutatorian of my high school class and I love to fish.'],
-        ['year'=>'****',
-        'photo'=>'assets/ironman.jpg',
-        'name'=>'Tony Stark',
-        'designation'=>'Iron Man',
-        'quote'=>'I am Iron Man',
-        'dream profession'=>'Avenger',
-        'company'=>'Stark Industries',
-        'intro'=>'I am Iron Man, and the leading (and strongest) Avenger',
-        'email'=>'tstark@Stark.com',
-        'skills'=>['World Saving','Engineering','Math'],
-        'fun fact'=>'The Avengers are a group of superheroes.'],
-        ['year'=>'**',
-        'photo'=>'assets/Valkeryie.jpg',
-        'name'=>'Valkeryie',
-        'designation'=>'Dog',
-        'quote'=>'"Bark bark bark."',
-        'dream profession'=>'Runner',
-        'company'=>'Self-Employed',
-        'intro'=>'I am fast dog, descended from the great bob sledding dogs of Siberia',
-        'email'=>'valkeryie@Dog.com',
-        'skills'=>['Running','Pet Recieving','Fecthing'],
-        'fun fact'=>'I have hiked a lot and I will never get tired.'],
-      ];
-  
   ?>
-        
+<html lang="en">      
 	<!-- https://www.bootdey.com/snippets/view/team-user-resume#html -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -63,11 +21,10 @@
 		<div class="container text-center mb-5">
 			<h1> <?="This is ASE 230 - "?><?= $students[$number]['name'] ?></h1>
 		</div>
-
 		<div class="container">
     <div class="row">
-      <div class="col-lg-5 col-md-6">
-        <div class="mb-2">
+      <div class="col-lg-5 col-md-6 ">
+        <div class="mb-3">
           <img class="w-100" src='<?= $students[$number]['photo'] ?>' alt="">
         </div>
         <div class="mb-2 d-flex">
@@ -88,19 +45,24 @@
             </a>
           </div>
         </div>
+          <p class="pr-2 font-weight-normal"><?=agewithremainder($students[$number]['birthday']) ?></p>
         <div class="mb-2">
           <ul class="list-unstyled">
             <li class="media">
-              <span class="w-25 text-black font-weight-normal">Dream profession:</span>
-              <label class='media-body'><?= $students[$number]['dream profession']?></label>
+                <p class="w-25 text-black font-weight-normal">Age:</p>
+                <p class='media-body'><?= age($students[$number]['birthday'])?></p>
             </li>
             <li class="media">
-              <span class="w-25 text-black font-weight-normal">Dream company: </span>
-              <label class='media-body'><?= $students[$number]['company'] ?></label>
+              <p class="w-25 text-black font-weight-normal">Dream profession:</p>
+              <p class='media-body'><?= $students[$number]['dream profession']?></p>
             </li>
             <li class="media">
-              <span class="w-25 text-black font-weight-normal">Email: </span>
-              <label class='media-body'><a href='mailto:<?=$students[$number]['email']?>'><?= $students[$number]['email']?></a></label>
+              <p class="w-25 text-black font-weight-normal">Dream company: </p>
+              <p class='media-body'><?= $students[$number]['company'] ?></p>
+            </li>
+            <li class="media">
+              <p class="w-25 text-black font-weight-normal">Email: </p>
+              <p class='media-body'><a href='mailto:<?=$students[$number]['email']?>'><?= $students[$number]['email']?></a></p>
             </li>
           </ul>
         </div>

@@ -7,10 +7,10 @@
         'dream profession'=>'Remote Developer',
         'company'=>'Intel',
         'intro'=>'"I am a CIT student with a focus on programming and data analytics. My working career has lead me to a wide variety of experiences. Problem solving is at the root of what I do and I am not afraid to ask questions or say I don\'t know."',
-        'email'=>'"kellera11@mymail.nku.edu"',
+        'email'=>'kellera11@mymail.nku.edu',
         'skills'=>['Python','Java','Tableau'],
         'fun fact'=>'"Secretariat was a champion thouroughbred most know for winning the Triple Crown in 1973. He set and still holds the record at all three Triple Crown races: The Kentucky Derby, The Preakness Stakes and The Belmont Stakes. Considered by most to be the greatest racehorses of all time, he is considered by some as one of the greatest athletes of all time. He became the 9th Triple Crown winner when he won the Belmont Stakes by 31 lengths, approximately 248 feet. There are 13 total Triple Crown winners: Sir Barton (1919), Gallant Fox (1930), Omaha (1935), War Admiral (1937), Whrilaway (1941), Count Fleet (1943), Assault (1946), Citation (1948), Secretariat (1973), Seattle Slew (1977), Affirmed (1978), American Pharoah (2015), Justify (2018)."',
-        'birthday'=>'11-05-1997']
+        'birthday'=>'1997-11-05']
         ,
         ['year'=>'****',
         'photo'=>'assets/Noah Dees.jpg',
@@ -23,7 +23,7 @@
         'email'=>'deesn1@mymail.nku.edu',
         'skills'=>['Finance','Information Technologies','Education'],
         'fun fact'=>'I graduated as the Salutatorian of my high school class and I love to fish.',
-        'birthday'=>'01-31-2000']
+        'birthday'=>'2000-01-31']
         ,
         ['year'=>'****',
         'photo'=>'assets/ironman.jpg',
@@ -36,7 +36,7 @@
         'email'=>'tstark@Stark.com',
         'skills'=>['World Saving','Engineering','Math'],
         'fun fact'=>'The Avengers are a group of superheroes.',
-        'birthday'=>'05-29-1970']
+        'birthday'=>'1970-05-29']
         ,
         ['year'=>'**',
         'photo'=>'assets/Valkeryie.jpg',
@@ -49,6 +49,5 @@
         'email'=>'valkeryie@Dog.com',
         'skills'=>['Running','Pet Recieving','Fecthing'],
         'fun fact'=>'I have hiked a lot and I will never get tired.',
-        'birthday'=>'04-20-2020'] 
-      ];
+        'birthday'=>'2020-04-20'] ];
 	?>

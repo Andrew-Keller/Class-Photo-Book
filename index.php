@@ -1,4 +1,8 @@
-<<?php require_once('data.php') ?>
+<<?php
+	include_once('data.php');
+	include_once('functions.php');
+
+		?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,6 +13,7 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="assets/css/index.css" />
 	<title>ASE 230 - Class of Fall 2022</title>
+
 </head>
 <body>
 	<div class="container text-center">
